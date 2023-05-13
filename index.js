@@ -2,7 +2,7 @@ Array.prototype.random = function () {
     return this[Math.floor((Math.random() * this.length))]
 }
 
-import __wordlist from './wordlist.json' assert { type: 'json' }
+import __wordlist from './wordlist.js'
 
 class taggert {
     constructor (wordlist = null) {
