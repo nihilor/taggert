@@ -1,12 +1,16 @@
 {
   "name": "taggert",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Creates random gamer tags.",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "node test.js"
   },
+  "repository": {
+    "type":         "git",
+    "url":          "git+https://github.com/nihilor/taggert.git"
+  },  
   "keywords": ["Tag", "Gamer", "Names", "Random", "Generator"],
   "author": "Mark Lubkowitz <me@mlu.io>",
   "license": "MIT"
