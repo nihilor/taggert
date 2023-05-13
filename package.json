@@ -1,0 +1,13 @@
+{
+  "name": "taggert",
+  "version": "0.1.0",
+  "description": "Creates random gamer tags.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": ["Tag", "Gamer", "Names", "Random", "Generator"],
+  "author": "Mark Lubkowitz <me@mlu.io>",
+  "license": "MIT"
+}
