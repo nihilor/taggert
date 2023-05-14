@@ -1,4 +1,4 @@
-import __wordlist from './wordlist.js'
+,import __wordlist from './wordlist.js'
 
 class taggert {
     constructor (wordlist = null) {
