@@ -1,17 +1,17 @@
-,import __wordlist from './wordlist.js'
+import __wordslist from './wordslist.js'
 
 class taggert {
-    constructor (wordlist = null) {
-        this.wordlist = wordlist || __wordlist
+    constructor (wordslist = null) {
+        this.wordslist = wordslist || __wordslist
     }
 
     new () {
         return Object
-            .getOwnPropertyNames(this.wordlist)
+            .getOwnPropertyNames(this.wordslist)
             .map(
                 k => this
-                    .wordlist[k][
-                        Math.floor((Math.random() * this.wordlist[k].length))
+                    .wordslist[k][
+                        Math.floor((Math.random() * this.wordslist[k].length))
                     ]
             )
             .join('-')

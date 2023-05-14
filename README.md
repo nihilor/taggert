@@ -24,9 +24,17 @@ Import the library and call `new()` to create a random gamer tag.
 import taggert from 'taggert'
 
 const tag = new taggert()
-console.log(
-    tag.new()
-)
+tag.new()
+```
+
+Some examples of randomly generated tags:
+
+```txt
+wideeyed-white-pumpkin
+hot-red-chilipepper
+scary-purple-bellpepper
+witty-black-mango
+disgusted-silver-orange
 ```
 
 ## LICENSE
