@@ -1,7 +1,3 @@
-Array.prototype.random = function () {
-    return this[Math.floor((Math.random() * this.length))]
-}
-
 import __wordlist from './wordlist.js'
 
 class taggert {
@@ -13,7 +9,10 @@ class taggert {
         return Object
             .getOwnPropertyNames(this.wordlist)
             .map(
-                k => this.wordlist[k].random()
+                k => this
+                    .wordlist[k][
+                        Math.floor((Math.random() * this.wordlist[k].length))
+                    ]
             )
             .join('-')
     }
