@@ -37,6 +37,18 @@ witty-black-mango
 disgusted-silver-orange
 ```
 
+Since version 0.3.0 it's possible to create gamer tags following a specific pattern. Just provide an array of wordslists names with the desired order of words in the pattern. Wordslists that doesn't exist will be skipped.
+
+```javascript
+console.log(
+    tag.make(["color", "adjective", "subject", "color", "fruit-vegetable"])
+)
+/*
+if a wordslist named 'subject' is not provides, this may be the output:
+azure-wild-gray-aubergine
+*/
+```
+
 ## LICENSE
 
 MIT License

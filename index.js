@@ -16,6 +16,23 @@ class taggert {
             )
             .join('-')
     }
+
+    make (pattern) {
+        if (!Array.isArray(pattern))
+            throw new Error('The pattern for make() must be of type array.')
+
+        return pattern
+            .filter(
+                k => this.wordslist.hasOwnProperty(k)
+            )
+            .map(
+                k => this
+                    .wordslist[k][
+                        Math.floor((Math.random() * this.wordslist[k].length))
+                    ]
+            )
+            .join('-')
+    }
 }
 
 export default taggert
