@@ -1,6 +1,6 @@
 {
   "name": "taggert",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Creates random gamer tags.",
   "main": "index.js",
   "type": "module",
